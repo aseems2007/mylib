@@ -4,22 +4,6 @@ using namespace std;
 
 int dp[MAX_STR_LENGTH][MAX_STR_LENGTH];
 
-/*void fillDP(string &s1, string &s2, int i, int j)
-{
-  if(dp[i][j]!=-1)  return;
-  if(s1[i]==s2[j])
-  {
-    if(i==0 || j==0)
-    {
-      dp[i][j] = 1;
-      fillDP(s1, s2, i+1, j+1);
-    }
-    else
-    {
-      dp[i][j] = dp[i-1][j-1]
-    }
-  }
-}*/
 string longestCommonSubstring(string &s1, string &s2)
 {
   int n1, n2, i, j, mi, mtn;
@@ -27,7 +11,6 @@ string longestCommonSubstring(string &s1, string &s2)
   n2 = s2.size();
   i = 0;
   j = 0;
-  //fillDP(s1, s2, 0, 0);
   mtn = 0;
   mi = 0;
   for(i=0; i<n1; i++)
@@ -56,7 +39,7 @@ string longestCommonSubstring(string &s1, string &s2)
 }
 int main()
 {
-  string s1, s2, index, len, sc;
+  string s1, s2, sc;
   while(true)
   {
     cin >> s1 >> s2;
