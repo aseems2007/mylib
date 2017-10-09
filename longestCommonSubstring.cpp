@@ -1,6 +1,5 @@
 #include "myheader.h"
 #define MAX_STR_LENGTH 1000
-using namespace std;
 
 int dp[MAX_STR_LENGTH][MAX_STR_LENGTH];
 
