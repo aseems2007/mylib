@@ -62,6 +62,11 @@ int main()
           i++;
       }
     }
+      if(j==k)
+      {
+        cout << i-k << " ";
+        j=0;
+      }
     cout << endl;
     kmp_table.clear();
   }
